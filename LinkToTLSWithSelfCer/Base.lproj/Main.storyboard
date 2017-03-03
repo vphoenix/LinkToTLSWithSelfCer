@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uNI-dR-3vP">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="HbO-j6-kzh">
+            <objects>
+                <navigationController id="uNI-dR-3vP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sMJ-Bz-Eha">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="d6O-gK-f7O"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iET-BJ-Po7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-745" y="124"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LinkToTLSWithSelfCer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="siM-qt-hJg">
+                                <rect key="frame" x="146" y="80.5" width="83" height="30"/>
+                                <state key="normal" title="URLSession"/>
+                                <connections>
+                                    <action selector="btnURLSessionTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SDk-Cm-qFG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rP2-gQ-xLb">
+                                <rect key="frame" x="128.5" y="176" width="118" height="30"/>
+                                <state key="normal" title="ASIHTTPRequest"/>
+                                <connections>
+                                    <action selector="btnASIHTTPRequestTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wlA-CC-a3U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rrf-qp-gL5">
+                                <rect key="frame" x="138.5" y="271" width="97" height="30"/>
+                                <state key="normal" title="AFNetworking"/>
+                                <connections>
+                                    <action selector="btnAFNetworkingTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q5f-L8-gNe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MuG-d0-4H3">
+                                <rect key="frame" x="123" y="366" width="128" height="30"/>
+                                <state key="normal" title="NSURLConnection"/>
+                                <connections>
+                                    <action selector="btnNSURLConnectionTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Wb-Qh-12B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R98-t4-iWq">
+                                <rect key="frame" x="162.5" y="461" width="49" height="30"/>
+                                <state key="normal" title="RestKit"/>
+                                <connections>
+                                    <action selector="btnRestKitTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="laf-fO-HlW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2D-s7-dIn">
+                                <rect key="frame" x="155.5" y="556.5" width="64" height="30"/>
+                                <state key="normal" title="WebView"/>
+                                <connections>
+                                    <action selector="btnWebViewTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fWh-rg-JrZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="siM-qt-hJg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2QC-gv-NZG"/>
+                            <constraint firstItem="R98-t4-iWq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.714" id="5TX-sK-Qh1"/>
+                            <constraint firstItem="siM-qt-hJg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.143" id="G7W-tQ-sj3"/>
+                            <constraint firstItem="R98-t4-iWq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KkY-EA-H7P"/>
+                            <constraint firstItem="K2D-s7-dIn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.857" id="Oea-Bf-dYR"/>
+                            <constraint firstItem="MuG-d0-4H3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UYb-9c-iQ2"/>
+                            <constraint firstItem="MuG-d0-4H3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.571" id="WgA-OM-DSv"/>
+                            <constraint firstItem="Rrf-qp-gL5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.429" id="YnH-WZ-tsf"/>
+                            <constraint firstItem="Rrf-qp-gL5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZYO-YN-ttv"/>
+                            <constraint firstItem="rP2-gQ-xLb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.286" id="fgo-hE-Zed"/>
+                            <constraint firstItem="rP2-gQ-xLb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gfV-2j-lQx"/>
+                            <constraint firstItem="K2D-s7-dIn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lrx-ck-G4F"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1cK-IY-c85"/>
+                    <connections>
+                        <segue destination="2Ay-Vn-BaW" kind="show" identifier="showWebView" id="gIY-pf-vUN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="123.68815592203899"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="2c8-L2-s1F">
+            <objects>
+                <viewController id="2Ay-Vn-BaW" customClass="WebViewController" customModule="LinkToTLSWithSelfCer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vrQ-RN-Hce"/>
+                        <viewControllerLayoutGuide type="bottom" id="d3Z-W0-HuD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XcA-tp-Iyx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WQN-c6-Ipw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="d3Z-W0-HuD" firstAttribute="top" secondItem="WQN-c6-Ipw" secondAttribute="bottom" id="7cH-le-imI"/>
+                            <constraint firstItem="WQN-c6-Ipw" firstAttribute="top" secondItem="XcA-tp-Iyx" secondAttribute="top" id="Unl-cj-tJp"/>
+                            <constraint firstItem="WQN-c6-Ipw" firstAttribute="leading" secondItem="XcA-tp-Iyx" secondAttribute="leading" id="gmf-wC-hI2"/>
+                            <constraint firstAttribute="trailing" secondItem="WQN-c6-Ipw" secondAttribute="trailing" id="lBj-aP-XKB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="MainWebView" destination="WQN-c6-Ipw" id="pmz-Qx-cCy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dda-bZ-zyk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="910" y="124"/>
+        </scene>
+    </scenes>
+</document>
